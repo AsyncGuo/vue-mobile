@@ -5,6 +5,7 @@ import Config from './config'
 Vue.use(Router)
 
 const Car = () => import('@/components/Car')
+const Car2 = r => require.ensure([], () => r(require('@/components/Car')))
 
 let router = new Router({
   routes: [
